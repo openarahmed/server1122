@@ -37,10 +37,17 @@ const port = process.env.PORT || 5000;
 
 
 app.use(cors());
-
+const datas = require('./Data/data.json')
 app.get('/', (req, res) =>{
     res.send('Dragon is running')
 });
+
+const datas = require('./Data/data.json')
+
+
+app.get('/datas',(req, res)=>{
+    res.send(datas)
+})
 
 
 app.listen(port, () => {

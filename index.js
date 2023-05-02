@@ -42,7 +42,7 @@ app.get('/', (req, res) =>{
     res.send('Dragon is running')
 });
 
-const datas = require('./Data/data.json')
+// const datas = require('./Data/data.json')
 
 
 app.get('/datas',(req, res)=>{

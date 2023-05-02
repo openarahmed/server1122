@@ -1,13 +1,13 @@
 const express = require('express');
 const app = express();
 const cors = require('cors')
-const port =process.env.PORT || 5000 ;
+const port =process.env.PORT || 8000 ;
 app.use(cors())
 
 const datas = require('./Data/data.json')
 
 app.get('/', (req, res) => {
-    res.send('Hello everyone');
+    res.send('Hello eveyone');
 })
 app.get('/datas',(req, res)=>{
     res.send(datas)
